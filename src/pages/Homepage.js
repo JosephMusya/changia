@@ -4,7 +4,7 @@ export default function Home(){
     return (
             <div className={styles.home}>
                 <div className={styles.topic}>
-                    <h1>Fundraising Campaigns</h1>
+                    <h1>Fundraising Campaigns - Quick & Transparent</h1>
                 </div>
                 <div className={styles.fundraise}>
                     <Fundraise title='Childrens home fundraise' />
