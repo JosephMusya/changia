@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fafafd;
 }
 
 .fundraise img {
@@ -20,4 +21,10 @@ h2 {
 
 p {
     color: var(--text-color-sec);
+}
+
+.donate button {
+    padding: 0.8rem 1rem;
+    border: solid 1px orange;
+    font-size: 1.2rem;
 }

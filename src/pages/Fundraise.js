@@ -12,6 +12,9 @@ export default function Fundraise(props){
             <div>
                 <p>Progress</p>
             </div>
+            <div className={styles.donate}>
+                <button>D o n a t e</button>
+            </div>
         </div>            
     )
 }
