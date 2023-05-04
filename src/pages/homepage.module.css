@@ -20,7 +20,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
-    width: 60%;
+    width: 68%;
     /* display: flex;
     justify-content: flex-start;
     gap: 2rem; */
