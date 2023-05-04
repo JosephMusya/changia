@@ -1,0 +1,23 @@
+.fundraise {
+    border: solid 2px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundraise img {
+    width: 80%;
+    aspect-ratio: 1.6;
+    object-fit: cover;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: var(--text-color-sec);
+}

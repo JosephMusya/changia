@@ -1,0 +1,29 @@
+nav {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--strong-background);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+.logo {
+    width: inherit;
+    border-bottom: solid 1px rgb(182, 182, 182);
+}
+
+.navElements li {
+    list-style-type: none;
+    padding: 0.8rem 0;
+}
