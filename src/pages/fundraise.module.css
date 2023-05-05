@@ -19,7 +19,7 @@ h2 {
     text-align: center;
 }
 
-p {
+.goal p {
     color: var(--text-color-sec);
 }
 

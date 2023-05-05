@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #1f2735;
+    --primary-color: #111e30;
     --secondary-color: #2d3748;
     --background-color: #ebebeb;
+    --highlights-color: #b6b6b6;
     --text-color: #fff;
     --text-color-sec: #676363;
-    --strong-background: #111e30;
     --div-padding: 1rem;
     --content-padding: 0.5rem;
 }
@@ -19,11 +19,15 @@ p {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     /* background-color: #fff; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.divider {
+    border-top: solid 1px var(--highlights-color);
 }
