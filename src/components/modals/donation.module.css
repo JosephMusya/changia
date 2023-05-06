@@ -1,109 +1,116 @@
 .donationModal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1rem;
-    width: 70vw;
-    height: 90vh;
-    color: black;
-    background-color: #fff;
-    border-radius: 0.2rem;
-    overflow: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  width: 70vw;
+  height: 90vh;
+  color: black;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .donationModal h3,
 .donationModal h4 {
-    text-align: center;
+  text-align: center;
 }
 
 .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .info .content div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .info .progress {
-    width: 10rem;
+  width: 10rem;
 }
 
 .subgoal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subgoal .linear {
-    padding: 0.5rem;
-    width: 100%;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .subgoal div {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .stickers {
-    /* width: 100%; */
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 0.1rem;
-    /* min-height: 4rem; */
-    overflow-x: hidden;
-    overflow-y: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* gap: 0.1rem; */
+  /* min-height: 4rem; */
+  overflow-y: auto;
+  justify-content: center;
+  display: grid;
 }
 
-.stickers div {
-    width: 100%;
-    aspect-ratio: 1;
-    background-color: #f6f4f4;
+.stickers div img {
+  width: 90%;
 }
 
+.stickers div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .media {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 }
 
 .media div {
-    width: 100%;
-    aspect-ratio: 1.618;
-    background-color: rgb(246, 244, 244);
+  width: 100%;
+  aspect-ratio: 1.618;
+  /* background-color: rgb(246, 244, 244); */
 }
-
+.media div img {
+  object-fit: cover;
+  width: 100%;
+}
 .donationModal .donate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: auto;
-    /* background-color: #a3a3a3; */
-    position: sticky;
-    bottom: 0;
-    /* padding: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  /* background-color: #a3a3a3; */
+  position: sticky;
+  bottom: 0;
+  /* padding: 1rem; */
 }
 
 .donate button {
-    padding: 1rem 1.6rem;
-    border: none;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1.2rem;
+  padding: 1rem 1.6rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2rem;
 }

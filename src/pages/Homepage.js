@@ -1,8 +1,8 @@
 import styles from "./homepage.module.css";
 import Fundraise from "./Fundraise";
-import {auth} from '../config/firebase/Firebase';
+import { auth } from "../config/firebase/Firebase";
 import { AuthContext } from "../providers/LoginProvider";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Login from "./Login";
 
 export default function Home() {
@@ -10,19 +10,17 @@ export default function Home() {
   // console.log(user)
   const user = useContext(AuthContext);
 
-  return (
-    user?
+  return user ? (
     <div className={styles.home}>
       <div className={styles.topic}>
         <h1>Fundraising Campaigns - Quick & Transparent</h1>
       </div>
       <div className={styles.fundraise}>
-        <Fundraise title="Childrens home fundraise" />
-        <Fundraise title="Wedding fundraise" />
-        <Fundraise title="Fees drive for John" />
-        <Fundraise title="ACK St Peters church construction" />
+        <Fundraise title="Jaribu women group fundraise" />
+        <Fundraise title="Children home fundraising" />
       </div>
-    </div>:
-    <Login/>
+    </div>
+  ) : (
+    <Login />
   );
 }
