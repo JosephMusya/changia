@@ -64,8 +64,8 @@ export default function DonationModal(props) {
       alert("Transaction was not completed, window closed.");
     },
   };
-  const refNo = Math.random().toString(5).substring;
-
+  const refNo = Math.random().toString(5);
+  console.log(refNo);
   const donate = () => {
     console.log("Initializing...");
     const token = "sk_live_cswltnqwc2rp7dedhblxpxmuoaz880jgqmi92dz";
@@ -88,7 +88,11 @@ export default function DonationModal(props) {
     }).then((res) => {
       res.json().then((data) => {
         console.log(data.data["authorization_url"]);
-        window.open(data.data["authorization_url"]);
+        if (totalAmount > 0) {
+          window.open(data.data["authorization_url"]);
+        } else {
+          alert("No amount");
+        }
       });
     });
   };
