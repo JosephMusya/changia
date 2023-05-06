@@ -42,5 +42,6 @@ h2 {
     width: 100vw;
     height: 100vh;
     background-color: rgba(202, 202, 202, 0.7);
+    overflow: hidden;
     /* color: black; */
 }

@@ -2,9 +2,16 @@ import styles from './fundraise.module.css';
 import placeholderImg from '../assets/placeholder.png'
 import { useState } from 'react';
 import DonationModal from '../components/modals/DonationModal';
-
+// import { db } from '../config/firebase/Firebase';
 export default function Fundraise(props){
     let [donateModal, setDonateModal] = useState(false);
+
+    if (donateModal) {
+        document.body.style.overflowY = "hidden"
+        // document.getElementsByClassName('fundraise').style.overflow="hidden";
+    } else {
+        document.body.style.overflowY = "auto"
+    }
 
     const toggleDonationModal = () => {
         setDonateModal = setDonateModal(!donateModal);
